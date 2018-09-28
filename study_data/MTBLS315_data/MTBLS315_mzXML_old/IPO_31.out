@@ -1,0 +1,1779 @@
+Loading required package: xcms
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: BiocParallel
+Loading required package: MSnbase
+Loading required package: mzR
+Loading required package: Rcpp
+Loading required package: ProtGenerics
+
+This is MSnbase version 2.6.2 
+  Visit https://lgatto.github.io/MSnbase/ to get started.
+
+
+Attaching package: ‘MSnbase’
+
+The following object is masked from ‘package:stats’:
+
+    smooth
+
+The following object is masked from ‘package:base’:
+
+    trimws
+
+
+This is xcms version 3.2.0 
+
+
+Attaching package: ‘xcms’
+
+The following object is masked from ‘package:stats’:
+
+    sigma
+
+Loading required package: rsm
+Loading required package: CAMERA
+
+
+
+starting new DoE with:
+min_peakwidth: c(12, 28)
+max_peakwidth: c(35, 65)
+ppm: c(17, 32)
+mzdiff: c(-0.001, 0.01)
+snthresh: 10
+noise: 10000
+prefilter: 5
+value_of_prefilter: 5000
+mzCenterFun: wMean
+integrate: 2
+fitgauss: TRUE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7266 regions of interest ... OK: 2109 found.
+2
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 3036 regions of interest ... OK: 290 found.
+3
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7266 regions of interest ... OK: 2211 found.
+4
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 3036 regions of interest ... OK: 743 found.
+5
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 5885 regions of interest ... OK: 2257 found.
+6
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2862 regions of interest ... OK: 378 found.
+7
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 5885 regions of interest ... OK: 2333 found.
+8
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2862 regions of interest ... OK: 837 found.
+9
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7266 regions of interest ... OK: 2063 found.
+10
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 3036 regions of interest ... OK: 289 found.
+11
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7266 regions of interest ... OK: 2142 found.
+12
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 3036 regions of interest ... OK: 737 found.
+13
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 5885 regions of interest ... OK: 2206 found.
+14
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2862 regions of interest ... OK: 376 found.
+15
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 5885 regions of interest ... OK: 2273 found.
+16
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2862 regions of interest ... OK: 831 found.
+17
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 4556 regions of interest ... OK: 1445 found.
+18
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 6689 regions of interest ... OK: 2202 found.
+19
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 2941 regions of interest ... OK: 760 found.
+20
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 4556 regions of interest ... OK: 1430 found.
+21
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 4556 regions of interest ... OK: 1466 found.
+22
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 4634 regions of interest ... OK: 1369 found.
+23
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4245 regions of interest ... OK: 1542 found.
+24
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 4556 regions of interest ... OK: 1456 found.
+25
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 4556 regions of interest ... OK: 1441 found.
+26
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 4556 regions of interest ... OK: 1445 found.
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1776 found.
+
+
+
+starting new DoE with:
+min_peakwidth: c(12, 24.8)
+max_peakwidth: c(50, 80)
+ppm: c(24.5, 39.5)
+mzdiff: c(-0.000450000000000001, 0.00835)
+snthresh: 10
+noise: 10000
+prefilter: 5
+value_of_prefilter: 5000
+mzCenterFun: wMean
+integrate: 2
+fitgauss: TRUE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 6689 regions of interest ... OK: 2251 found.
+2
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 3786 regions of interest ... OK: 1010 found.
+3
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 6689 regions of interest ... OK: 2306 found.
+4
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 3786 regions of interest ... OK: 1084 found.
+5
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 5389 regions of interest ... OK: 2357 found.
+6
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 3258 regions of interest ... OK: 1089 found.
+7
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 5389 regions of interest ... OK: 2402 found.
+8
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 3258 regions of interest ... OK: 1172 found.
+9
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 6689 regions of interest ... OK: 2198 found.
+10
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 3786 regions of interest ... OK: 1009 found.
+11
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 6689 regions of interest ... OK: 2248 found.
+12
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 3786 regions of interest ... OK: 1079 found.
+13
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 5389 regions of interest ... OK: 2312 found.
+14
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 3258 regions of interest ... OK: 1084 found.
+15
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 5389 regions of interest ... OK: 2357 found.
+16
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 3258 regions of interest ... OK: 1163 found.
+17
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1776 found.
+18
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 5885 regions of interest ... OK: 2287 found.
+19
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 3488 regions of interest ... OK: 1124 found.
+20
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1766 found.
+21
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1771 found.
+22
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 5096 regions of interest ... OK: 1698 found.
+23
+Detecting mass traces at 39.5 ppm ... OK
+Detecting chromatographic peaks in 4365 regions of interest ... OK: 1803 found.
+24
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1793 found.
+25
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1768 found.
+26
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 4664 regions of interest ... OK: 1776 found.
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1808 found.
+
+
+
+starting new DoE with:
+min_peakwidth: c(13.28, 23.52)
+max_peakwidth: c(65, 95)
+ppm: c(27.5, 42.5)
+mzdiff: c(-0.00485, 0.00395)
+snthresh: 10
+noise: 10000
+prefilter: 5
+value_of_prefilter: 5000
+mzCenterFun: wMean
+integrate: 2
+fitgauss: TRUE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 6164 regions of interest ... OK: 2245 found.
+2
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 3581 regions of interest ... OK: 1126 found.
+3
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 6164 regions of interest ... OK: 2310 found.
+4
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 3581 regions of interest ... OK: 1169 found.
+5
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 5458 regions of interest ... OK: 2331 found.
+6
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 3318 regions of interest ... OK: 1170 found.
+7
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 5458 regions of interest ... OK: 2389 found.
+8
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 3318 regions of interest ... OK: 1211 found.
+9
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 6164 regions of interest ... OK: 2188 found.
+10
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 3581 regions of interest ... OK: 1116 found.
+11
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 6164 regions of interest ... OK: 2232 found.
+12
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 3581 regions of interest ... OK: 1151 found.
+13
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 5458 regions of interest ... OK: 2264 found.
+14
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 3318 regions of interest ... OK: 1162 found.
+15
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 5458 regions of interest ... OK: 2307 found.
+16
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 3318 regions of interest ... OK: 1198 found.
+17
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1808 found.
+18
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 5620 regions of interest ... OK: 2282 found.
+19
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 3383 regions of interest ... OK: 1165 found.
+20
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1812 found.
+21
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1822 found.
+22
+Detecting mass traces at 27.5 ppm ... OK
+Detecting chromatographic peaks in 4797 regions of interest ... OK: 1758 found.
+23
+Detecting mass traces at 42.5 ppm ... OK
+Detecting chromatographic peaks in 4432 regions of interest ... OK: 1840 found.
+24
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1826 found.
+25
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1789 found.
+26
+Detecting mass traces at 35 ppm ... OK
+Detecting chromatographic peaks in 4513 regions of interest ... OK: 1808 found.
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1846 found.
+
+
+
+starting new DoE with:
+min_peakwidth: c(13.28, 21.472)
+max_peakwidth: c(80, 110)
+ppm: c(29.75, 44.75)
+mzdiff: c(-0.00925, -0.000450000000000001)
+snthresh: 10
+noise: 10000
+prefilter: 5
+value_of_prefilter: 5000
+mzCenterFun: wMean
+integrate: 2
+fitgauss: TRUE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 6101 regions of interest ... OK: 2296 found.
+2
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 3924 regions of interest ... OK: 1363 found.
+3
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 6101 regions of interest ... OK: 2360 found.
+4
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 3924 regions of interest ... OK: 1394 found.
+5
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 5441 regions of interest ... OK: 2362 found.
+6
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 3590 regions of interest ... OK: 1398 found.
+7
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 5441 regions of interest ... OK: 2440 found.
+8
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 3590 regions of interest ... OK: 1439 found.
+9
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 6101 regions of interest ... OK: 2251 found.
+10
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 3924 regions of interest ... OK: 1346 found.
+11
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 6101 regions of interest ... OK: 2309 found.
+12
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 3924 regions of interest ... OK: 1370 found.
+13
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 5441 regions of interest ... OK: 2318 found.
+14
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 3590 regions of interest ... OK: 1388 found.
+15
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 5441 regions of interest ... OK: 2391 found.
+16
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 3590 regions of interest ... OK: 1425 found.
+17
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1846 found.
+18
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 5484 regions of interest ... OK: 2368 found.
+19
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 3569 regions of interest ... OK: 1392 found.
+20
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1827 found.
+21
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1866 found.
+22
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 4758 regions of interest ... OK: 1816 found.
+23
+Detecting mass traces at 44.75 ppm ... OK
+Detecting chromatographic peaks in 4418 regions of interest ... OK: 1877 found.
+24
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1857 found.
+25
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1830 found.
+26
+Detecting mass traces at 37.25 ppm ... OK
+Detecting chromatographic peaks in 4400 regions of interest ... OK: 1846 found.
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 4758 regions of interest ... OK: 1843 found.
+no increase, stopping
+best parameter settings:
+min_peakwidth: 17.376
+max_peakwidth: 110
+ppm: 29.75
+mzdiff: -0.00925
+snthresh: 10
+noise: 10000
+prefilter: 5
+value_of_prefilter: 5000
+mzCenterFun: wMean
+integrate: 2
+fitgauss: TRUE
+verbose.columns: TRUE
+
+Warning message:
+In optimizeXcmsSet(files = mz[args$whichFile], params = peakpickingParameters,  :
+  IPO (nSlaves-argument) and xcms (BPPARAM-argument) parallelisation cannot be used together! Setting nSlaves to 1
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 4348 regions of interest ... OK: 1684 found.
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 6121 regions of interest ... OK: 2281 found.
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 5435 regions of interest ... OK: 2513 found.
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 7011 regions of interest ... OK: 2586 found.
+Detecting mass traces at 29.75 ppm ... OK
+Detecting chromatographic peaks in 5839 regions of interest ... OK: 3410 found.
+
+
+
+starting new DoE with:
+
+distFunc: cor_opt
+gapInit: c(0, 0.4)
+gapExtend: c(2.1, 2.7)
+profStep: c(0.7, 1)
+plottype: none
+response: 1
+factorDiag: 2
+factorGap: 1
+localAlignment: 0
+retcorMethod: obiwarp
+bw: c(22, 38)
+minfrac: 0.05
+mzwid: c(0.015, 0.035)
+minsamp: 1
+max: 50
+center: 3
+
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 90767 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 127074 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+
+
+
+starting new DoE with:
+
+gapInit: c(0.16, 0.64)
+gapExtend: c(2.16, 2.64)
+profStep: c(0.595, 0.895)
+bw: c(12.4, 31.6)
+mzwid: c(0.003, 0.027)
+distFunc: cor_opt
+plottype: none
+response: 1
+factorDiag: 2
+factorGap: 1
+localAlignment: 0
+retcorMethod: obiwarp
+minfrac: 0.05
+minsamp: 1
+max: 50
+center: 3
+
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.895 ... OK
+Create profile matrix with method 'bin' and step 0.895 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 1058936 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 117661 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.745 ... OK
+Create profile matrix with method 'bin' and step 0.745 ... OK
+
+Processing 211788 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+
+
+
+starting new DoE with:
+
+gapInit: c(0.352, 0.928)
+gapExtend: c(2.112, 2.688)
+profStep: c(0.415, 0.775)
+bw: c(0.879999999999999, 23.92)
+mzwid: c(0.009, 0.033)
+distFunc: cor_opt
+plottype: none
+response: 1
+factorDiag: 2
+factorGap: 1
+localAlignment: 0
+retcorMethod: obiwarp
+minfrac: 0.05
+minsamp: 1
+max: 50
+center: 3
+
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.415 ... OK
+Create profile matrix with method 'bin' and step 0.415 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.775 ... OK
+Create profile matrix with method 'bin' and step 0.775 ... OK
+Error in .local(object, ...) : 
+  Dimensions of profile matrices do not match !
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 352980 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 96268 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 151278 mz slices ... OK
+center sample:  14_P-13-MCMA447_522-16492 
+Processing: 48_P-11-MCMA444_522-16490  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+35_P-3-MCMA431_522-16482  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+37_P-48-MCMA534_522-16527  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+84_P-7-MCMA436_522-16486  Create profile matrix with method 'bin' and step 0.595 ... OK
+Create profile matrix with method 'bin' and step 0.595 ... OK
+
+Processing 135762 mz slices ... OK
+no increase stopping
+library(xcms)
+library(Rmpi)
+
+xset <- xcmsSet( 
+  method = "centWave",
+  peakwidth       = c(17.376, 110),
+  ppm             = 29.75,
+  noise           = 10000,
+  snthresh        = 10,
+  mzdiff          = -0.00925,
+  prefilter       = c(5, 5000),
+  mzCenterFun     = "wMean",
+  integrate       = 2,
+  fitgauss        = TRUE,
+  verbose.columns = TRUE)
+xset <- retcor( 
+  xset,
+  method         = "obiwarp",
+  plottype       = "none",
+  distFunc       = "cor_opt",
+  profStep       = 0.595,
+  center         = 3,
+  response       = 1,
+  gapInit        = 0.64,
+  gapExtend      = 2.64,
+  factorDiag     = 2,
+  factorGap      = 1,
+  localAlignment = 0)
+xset <- group( 
+  xset,
+  method  = "density",
+  bw      = 12.4,
+  mzwid   = 0.021,
+  minfrac = 0.05,
+  minsamp = 1,
+  max     = 50)
+
+xset <- fillPeaks(xset)

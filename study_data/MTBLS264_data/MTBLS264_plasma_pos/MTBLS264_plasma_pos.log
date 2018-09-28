@@ -1,0 +1,37 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 7 >> IPO_7.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 12 >> IPO_12.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 5 >> IPO_5.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 11 > IPO_11.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 10 > IPO_10.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 6 > IPO_6.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 13 > IPO_13.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 11 > IPO_11.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 3 > IPO_3.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 4 > IPO_4.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 12 > IPO_12.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 5 > IPO_5.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 39.84, 'peakMax': 105.5, 'ppm': 27.14, 'noise': 1069.25, 'snthresh': 10.0, 'mzdiff': -0.01002, 'filterMin': 3.0, 'filterMax': 524.75, 'integrate': 2.0, 'binSizeObi': 0.736, 'gapInit': 0.1056, 'gapExtend': 2.688, 'bw': 11.248, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 46.4, 'peakMax': 77.9, 'ppm': 24.614, 'noise': 1242.5, 'snthresh': 10.0, 'mzdiff': -0.0076, 'filterMin': 3.0, 'filterMax': 351.5, 'integrate': 2.0, 'binSizeObi': 0.865, 'gapInit': 0.4, 'gapExtend': 2.4, 'bw': 22.0, 'binSizeDensity': 0.015, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 39.2, 'peakMax': 95.0, 'ppm': 6.5, 'noise': 514.85, 'snthresh': 10.0, 'mzdiff': -0.00243, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.61, 'gapInit': 0.14, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.003, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 41.81333333333334, 'peakMax': 92.8, 'ppm': 19.418000000000003, 'noise': 942.1999999999999, 'snthresh': 10.0, 'mzdiff': -0.006683333333333333, 'filterMin': 3.0, 'filterMax': 458.75, 'integrate': 2.0, 'binSizeObi': 0.737, 'gapInit': 0.21520000000000003, 'gapExtend': 2.576, 'bw': 15.216, 'binSizeDensity': 0.0114, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/plasma/pos/plasma_pos.txt' --ppm 19.418000000000003 --mode 'positive' --peakMin 41.81333333333334 --peakMax 92.8 --mzdiff -0.006683333333333333 --binSizeObi 0.737 --gapInit 0.21520000000000003 --gapExtend 2.576 --bw 15.216 --minFrac 0.05000000000000001 --binSizeDensity 0.0114 --alignedFile '/home/downloading_data/MTBLS264/raw/plasma/pos/IPO_aligned_MTBLS264_plasma_pos.csv' --noise 942.1999999999999 --filterMin 3.0 --filterMax 458.75 > '/home/downloading_data/MTBLS264/raw/plasma/pos/plasma_pos_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 5 > IPO_5.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 4 > IPO_4.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_pos.txt --whichFile 2 > IPO_2.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 39.2, 'peakMax': 95.0, 'ppm': 6.5, 'noise': 514.85, 'snthresh': 10.0, 'mzdiff': -0.00243, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.56, 'gapExtend': 2.76, 'bw': 12.4, 'binSizeDensity': 0.0078, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 39.84, 'peakMax': 105.5, 'ppm': 27.14, 'noise': 1069.25, 'snthresh': 10.0, 'mzdiff': -0.01002, 'filterMin': 3.0, 'filterMax': 524.75, 'integrate': 2.0, 'binSizeObi': 0.71, 'gapInit': 0.16, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0186, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 52.8, 'peakMax': 80.0, 'ppm': 7.55, 'noise': 565.3, 'snthresh': 10.0, 'mzdiff': -0.000449999999999999, 'filterMin': 3.0, 'filterMax': 881.15, 'integrate': 2.0, 'binSizeObi': 0.88, 'gapInit': 0.18, 'gapExtend': 2.76, 'bw': 12.4, 'binSizeDensity': 0.003, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 43.946666666666665, 'peakMax': 93.5, 'ppm': 13.729999999999999, 'noise': 716.4666666666666, 'snthresh': 10.0, 'mzdiff': -0.004299999999999999, 'filterMin': 3.0, 'filterMax': 635.3000000000001, 'integrate': 2.0, 'binSizeObi': 0.8633333333333333, 'gapInit': 0.30000000000000004, 'gapExtend': 2.72, 'bw': 12.4, 'binSizeDensity': 0.0098, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/plasma/pos/plasma_pos.txt' --ppm 13.729999999999999 --mode 'positive' --peakMin 43.946666666666665 --peakMax 93.5 --mzdiff -0.004299999999999999 --binSizeObi 0.8633333333333333 --gapInit 0.30000000000000004 --gapExtend 2.72 --bw 12.4 --minFrac 0.05000000000000001 --binSizeDensity 0.0098 --alignedFile '/home/downloading_data/MTBLS264/raw/plasma/pos/IPO_aligned_MTBLS264_plasma_pos.csv' --noise 716.4666666666666 --filterMin 3.0 --filterMax 635.3000000000001 > '/home/downloading_data/MTBLS264/raw/plasma/pos/plasma_pos_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

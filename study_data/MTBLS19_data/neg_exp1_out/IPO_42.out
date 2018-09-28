@@ -1,0 +1,99 @@
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 42 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 9 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 44 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 9 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: BiocParallel
+Loading required package: MSnbase
+Loading required package: mzR
+Loading required package: Rcpp
+Loading required package: ProtGenerics
+
+This is MSnbase version 2.6.3 
+  Visit https://lgatto.github.io/MSnbase/ to get started.
+
+
+Attaching package: ‘MSnbase’
+
+The following object is masked from ‘package:stats’:
+
+    smooth
+
+The following object is masked from ‘package:base’:
+
+    trimws
+
+
+This is xcms version 3.2.0 
+
+
+Attaching package: ‘xcms’
+
+The following object is masked from ‘package:stats’:
+
+    sigma
+
+Loading required package: rsm
+Loading required package: CAMERA
+
+
+
+starting new DoE with:
+min_peakwidth: c(12, 28)
+max_peakwidth: c(35, 65)
+ppm: c(17, 32)
+mzdiff: c(-0.001, 0.01)
+snthresh: 10
+noise: c(5, 500)
+prefilter: 3
+value_of_prefilter: 5
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 1051 regions of interest ... OK: 261 found.
+2
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 178 regions of interest ... OK: 28 found.
+3
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 1051 regions of interest ... OK: 270 found.
+4
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 178 regions of interest ... OK: 35 found.
+5
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 1743 regions of interest ... OK: 531 found.

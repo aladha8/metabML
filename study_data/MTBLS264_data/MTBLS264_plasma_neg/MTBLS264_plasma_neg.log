@@ -1,0 +1,42 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 12 >> IPO_12.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 15 >> IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 10 >> IPO_10.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 14 > IPO_14.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 15 > IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 6 > IPO_6.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 15 > IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 14 > IPO_14.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 1 > IPO_1.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 5 > IPO_5.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 7 > IPO_7.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 2 > IPO_2.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 15 > IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 12 > IPO_12.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 9 > IPO_9.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 35.2, 'peakMax': 74.2, 'ppm': 14.0, 'noise': 995.0, 'snthresh': 10.0, 'mzdiff': 0.00285, 'filterMin': 3.0, 'filterMax': 534.65, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.16, 'gapExtend': 3.06, 'bw': 12.4, 'binSizeDensity': 0.015, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 32.8, 'peakMax': 72.6, 'ppm': 14.0, 'noise': 995.0, 'snthresh': 10.0, 'mzdiff': 0.0133, 'filterMin': 3.0, 'filterMax': 99.05, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.14, 'gapExtend': 3.06, 'bw': 12.4, 'binSizeDensity': 0.019, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 34.4, 'peakMax': 74.2, 'ppm': 13.25, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.0067, 'filterMin': 3.0, 'filterMax': 846.5, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.352, 'gapExtend': 2.832, 'bw': 10.096, 'binSizeDensity': 0.01332, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 34.13333333333333, 'peakMax': 73.66666666666667, 'ppm': 13.75, 'noise': 830.0, 'snthresh': 10.0, 'mzdiff': 0.0076166666666666666, 'filterMin': 3.0, 'filterMax': 493.3999999999999, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.21733333333333335, 'gapExtend': 2.984, 'bw': 11.632, 'binSizeDensity': 0.015773333333333334, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/plasma/neg/plasma_neg.txt' --ppm 13.75 --mode 'negative' --peakMin 34.13333333333333 --peakMax 73.66666666666667 --mzdiff 0.0076166666666666666 --binSizeObi 1.0 --gapInit 0.21733333333333335 --gapExtend 2.984 --bw 11.632 --minFrac 0.05000000000000001 --binSizeDensity 0.015773333333333334 --alignedFile '/home/downloading_data/MTBLS264/raw/plasma/neg/IPO_aligned_MTBLS264_plasma_neg.csv' --noise 830.0 --filterMin 3.0 --filterMax 493.3999999999999 > '/home/downloading_data/MTBLS264/raw/plasma/neg/plasma_neg_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 3 > IPO_3.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 11 > IPO_11.out', 'nohup Rscript IPO_param_picking.R --fnames plasma_neg.txt --whichFile 4 > IPO_4.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 36.8, 'peakMax': 75.0, 'ppm': 11.0, 'noise': 920.75, 'snthresh': 10.0, 'mzdiff': 0.0122, 'filterMin': 3.0, 'filterMax': 821.75, 'integrate': 2.0, 'binSizeObi': 0.76, 'gapInit': 0.4, 'gapExtend': 2.4, 'bw': 12.4, 'binSizeDensity': 0.0186, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 36.0, 'peakMax': 75.0, 'ppm': 13.25, 'noise': 995.0, 'snthresh': 10.0, 'mzdiff': 0.00725, 'filterMin': 3.0, 'filterMax': 118.85, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.928, 'gapExtend': 3.132, 'bw': 7.792, 'binSizeDensity': 0.01404, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 34.4, 'peakMax': 74.2, 'ppm': 14.0, 'noise': 995.0, 'snthresh': 10.0, 'mzdiff': 0.0133, 'filterMin': 3.0, 'filterMax': 995.0, 'integrate': 2.0, 'binSizeObi': 0.971, 'gapInit': 0.0, 'gapExtend': 2.688, 'bw': 8.944, 'binSizeDensity': 0.0182, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 35.73333333333333, 'peakMax': 74.73333333333333, 'ppm': 12.75, 'noise': 970.25, 'snthresh': 10.0, 'mzdiff': 0.010916666666666667, 'filterMin': 3.0, 'filterMax': 645.1999999999999, 'integrate': 2.0, 'binSizeObi': 0.9103333333333333, 'gapInit': 0.4426666666666667, 'gapExtend': 2.74, 'bw': 9.712000000000002, 'binSizeDensity': 0.01694666666666667, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/plasma/neg/plasma_neg.txt' --ppm 12.75 --mode 'negative' --peakMin 35.73333333333333 --peakMax 74.73333333333333 --mzdiff 0.010916666666666667 --binSizeObi 0.9103333333333333 --gapInit 0.4426666666666667 --gapExtend 2.74 --bw 9.712000000000002 --minFrac 0.05000000000000001 --binSizeDensity 0.01694666666666667 --alignedFile '/home/downloading_data/MTBLS264/raw/plasma/neg/IPO_aligned_MTBLS264_plasma_neg.csv' --noise 970.25 --filterMin 3.0 --filterMax 645.1999999999999 > '/home/downloading_data/MTBLS264/raw/plasma/neg/plasma_neg_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

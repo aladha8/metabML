@@ -1,0 +1,76 @@
+[1] "parameters for centwave: "
+Object of class:  CentWaveParam 
+Parameters:
+ ppm: 14.9 
+ peakwidth: 34.6666666666667, 74.1333333333333 
+ snthresh: 10 
+ prefilter: 3, 739 
+ mzCenterFun: wMean 
+ integrate: 2 
+ mzdiff: -0.002466667 
+ fitgauss: FALSE 
+ noise: 434 
+ verboseColumns: TRUE 
+ roiList length: 0 
+ firstBaselineCheck TRUE 
+ roiScales length: 0 
+[1] "parameters for obiwarp: "
+Object of class:  ObiwarpParam 
+Parameters:
+ binSize: 0.786 
+ centerSample:  
+ response: 1 
+ distFun: cor_opt 
+ gapInit: 0.544 
+ gapExtend: 2.676 
+ factorDiag: 2 
+ factorGap: 1 
+ localAlignment: FALSE 
+ initPenalty: 0 
+[1] "parameters for density:"
+Object of class:  PeakDensityParam 
+Parameters:
+ sampleGroups: numeric of length 30 
+ bw: 12.016 
+ minFraction: 0.05 
+ minSamples: 1 
+ binSize: 0.0082 
+ maxFeatures: 50 
+[1] "fill chrom peak params: "
+Object of class:  FillChromPeaksParam 
+Parameters:
+ expandMz: 0 
+ expandRt: 0 
+ ppm: 0 
+[1] "starting conversion to xcmsSet"
+[1] "conversion complete"
+[1] "wrote to first csv"
+[1] "finished annotation"
+Start grouping after retention time.
+Created 165 pseudospectra.
+[1] "finished group FWHM"
+[1] "got length, starting isotope finding"
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+Found isotopes: 2937 
+[1] "found isotopes"
+Start grouping after correlation.
+Generating EIC's .. 
+Warning: Found NA peaks in selected sample.
+
+Calculating peak correlations in 165 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+
+Calculating isotope assignments in 165 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+Calculating graph cross linking in 165 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+New number of ps-groups:  7451 
+xsAnnotate has now 7451 groups, instead of 165 
+[1] "finished group corr!"
+Generating peak matrix for peak annotation!
+Found and use user-defined ruleset!
+Calculating possible adducts in 7451 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+[1] "found adducts"

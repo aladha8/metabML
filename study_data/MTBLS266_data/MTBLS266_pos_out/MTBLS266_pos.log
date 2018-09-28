@@ -1,0 +1,28 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 14 > IPO_14.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 2 > IPO_2.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 9 > IPO_9.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 7 > IPO_7.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 5 > IPO_5.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 23 > IPO_23.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 4 > IPO_4.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 24 > IPO_24.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 20 > IPO_20.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 10 > IPO_10.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 22 > IPO_22.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 26 > IPO_26.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 11 > IPO_11.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 19 > IPO_19.out', 'nohup Rscript IPO_param_picking.R --fnames pos.txt --whichFile 6 > IPO_6.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 28.8, 'peakMax': 66.2, 'ppm': 10.25, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': -0.0065, 'filterMin': 3.0, 'filterMax': 54.5, 'integrate': 2.0, 'binSizeObi': 0.85, 'gapInit': 0.496, 'gapExtend': 2.4, 'bw': 12.4, 'binSizeDensity': 0.0054, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 36.0, 'peakMax': 65.0, 'ppm': 11.75, 'noise': 599.0, 'snthresh': 10.0, 'mzdiff': -0.00595, 'filterMin': 3.0, 'filterMax': 435.65, 'integrate': 2.0, 'binSizeObi': 0.79, 'gapInit': 0.616, 'gapExtend': 2.4, 'bw': 12.4, 'binSizeDensity': 0.0078, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 36.32, 'peakMax': 74.0, 'ppm': 13.25, 'noise': 945.5, 'snthresh': 10.0, 'mzdiff': -0.00628, 'filterMin': 3.0, 'filterMax': 717.8, 'integrate': 2.0, 'binSizeObi': 0.61, 'gapInit': 0.64, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.003, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 33.70666666666667, 'peakMax': 68.39999999999999, 'ppm': 11.75, 'noise': 681.5, 'snthresh': 10.0, 'mzdiff': -0.006243333333333333, 'filterMin': 3.0, 'filterMax': 402.6499999999999, 'integrate': 2.0, 'binSizeObi': 0.75, 'gapInit': 0.5840000000000001, 'gapExtend': 2.48, 'bw': 12.4, 'binSizeDensity': 0.005399999999999999, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS266/raw/pos/pos.txt' --ppm 11.75 --mode 'positive' --peakMin 33.70666666666667 --peakMax 68.39999999999999 --mzdiff -0.006243333333333333 --binSizeObi 0.75 --gapInit 0.5840000000000001 --gapExtend 2.48 --bw 12.4 --minFrac 0.05000000000000001 --binSizeDensity 0.005399999999999999 --alignedFile '/home/downloading_data/MTBLS266/raw/pos/IPO_aligned_MTBLS266_pos.csv' --noise 681.5 --filterMin 3.0 --filterMax 402.6499999999999 > '/home/downloading_data/MTBLS266/raw/pos/pos_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

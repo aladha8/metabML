@@ -1,0 +1,110 @@
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 51 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 4 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 59 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 10 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 133 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 17 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 146 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 20 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 51 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 4 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 59 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 10 
+xsAnnotate contains no pseudospectra. Regroup all peaks into one!
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 100  
+Found isotopes: 134 
+wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 1257 regions of interest ... OK: 322 found.
+2
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 198 regions of interest ... OK: 32 found.
+3
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 1257 regions of interest ... OK: 349 found.
+4
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 198 regions of interest ... OK: 45 found.
+5
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2215 regions of interest ... OK: 701 found.
+6
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 448 regions of interest ... OK: 85 found.
+7
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2215 regions of interest ... OK: 753 found.
+8
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 448 regions of interest ... OK: 113 found.
+9
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 1257 regions of interest ... OK: 321 found.
+10
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 198 regions of interest ... OK: 32 found.
+11
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 1257 regions of interest ... OK: 348 found.
+12
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 198 regions of interest ... OK: 45 found.
+13
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2215 regions of interest ... OK: 694 found.
+14

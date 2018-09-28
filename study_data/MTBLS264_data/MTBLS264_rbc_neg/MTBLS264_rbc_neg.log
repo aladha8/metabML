@@ -1,0 +1,37 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 13 >> IPO_13.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 3 >> IPO_3.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 12 >> IPO_12.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 16 > IPO_16.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 3 > IPO_3.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 10 > IPO_10.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 2 > IPO_2.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 6 > IPO_6.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 1 > IPO_1.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 10 > IPO_10.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 12 > IPO_12.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 15 > IPO_15.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 34.4, 'peakMax': 73.4, 'ppm': 14.75, 'noise': 995.0, 'snthresh': 10.0, 'mzdiff': -1.00000000000013e-05, 'filterMin': 3.0, 'filterMax': 94.1, 'integrate': 2.0, 'binSizeObi': 0.7, 'gapInit': 0.16, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 36.16, 'peakMax': 89.0, 'ppm': 11.252, 'noise': 1044.5, 'snthresh': 10.0, 'mzdiff': 0.006414, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.571, 'gapInit': 0.36, 'gapExtend': 2.688, 'bw': 10.096, 'binSizeDensity': 0.01524, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 37.6, 'peakMax': 104.0, 'ppm': 11.54, 'noise': 1267.25, 'snthresh': 10.0, 'mzdiff': 0.005446, 'filterMin': 3.0, 'filterMax': 252.5, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.16, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 36.053333333333335, 'peakMax': 88.8, 'ppm': 12.514000000000001, 'noise': 1102.25, 'snthresh': 10.0, 'mzdiff': 0.0039499999999999995, 'filterMin': 3.0, 'filterMax': 115.86666666666667, 'integrate': 2.0, 'binSizeObi': 0.757, 'gapInit': 0.22666666666666668, 'gapExtend': 2.656, 'bw': 11.632, 'binSizeDensity': 0.01588, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/rbc/neg/rbc_neg.txt' --ppm 12.514000000000001 --mode 'negative' --peakMin 36.053333333333335 --peakMax 88.8 --mzdiff 0.0039499999999999995 --binSizeObi 0.757 --gapInit 0.22666666666666668 --gapExtend 2.656 --bw 11.632 --minFrac 0.05000000000000001 --binSizeDensity 0.01588 --alignedFile '/home/downloading_data/MTBLS264/raw/rbc/neg/IPO_aligned_MTBLS264_rbc_neg.csv' --noise 1102.25 --filterMin 3.0 --filterMax 115.86666666666667 > '/home/downloading_data/MTBLS264/raw/rbc/neg/rbc_neg_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 5 > IPO_5.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 15 > IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames rbc_neg.txt --whichFile 4 > IPO_4.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 31.2, 'peakMax': 80.0, 'ppm': 14.0, 'noise': 460.4, 'snthresh': 10.0, 'mzdiff': 0.00483, 'filterMin': 3.0, 'filterMax': 277.25, 'integrate': 2.0, 'binSizeObi': 0.73, 'gapInit': 0.64, 'gapExtend': 2.4, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 37.6, 'peakMax': 104.0, 'ppm': 11.54, 'noise': 1267.25, 'snthresh': 10.0, 'mzdiff': 0.005446, 'filterMin': 3.0, 'filterMax': 252.5, 'integrate': 2.0, 'binSizeObi': 0.985, 'gapInit': 0.64, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 34.4, 'peakMax': 74.2, 'ppm': 13.25, 'noise': 569.3, 'snthresh': 10.0, 'mzdiff': 0.0122, 'filterMin': 3.0, 'filterMax': 435.65, 'integrate': 2.0, 'binSizeObi': 0.855, 'gapInit': 0.64, 'gapExtend': 2.7, 'bw': 12.4, 'binSizeDensity': 0.023, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 34.4, 'peakMax': 86.06666666666666, 'ppm': 12.93, 'noise': 765.65, 'snthresh': 10.0, 'mzdiff': 0.007492000000000001, 'filterMin': 3.0, 'filterMax': 321.8, 'integrate': 2.0, 'binSizeObi': 0.8566666666666666, 'gapInit': 0.64, 'gapExtend': 2.58, 'bw': 12.4, 'binSizeDensity': 0.018466666666666666, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/rbc/neg/rbc_neg.txt' --ppm 12.93 --mode 'negative' --peakMin 34.4 --peakMax 86.06666666666666 --mzdiff 0.007492000000000001 --binSizeObi 0.8566666666666666 --gapInit 0.64 --gapExtend 2.58 --bw 12.4 --minFrac 0.05000000000000001 --binSizeDensity 0.018466666666666666 --alignedFile '/home/downloading_data/MTBLS264/raw/rbc/neg/IPO_aligned_MTBLS264_rbc_neg.csv' --noise 765.65 --filterMin 3.0 --filterMax 321.8 > '/home/downloading_data/MTBLS264/raw/rbc/neg/rbc_neg_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

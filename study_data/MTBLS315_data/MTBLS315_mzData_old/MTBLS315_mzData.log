@@ -1,0 +1,17 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_files.txt --whichFile 55 --isotope CAMERA >> IPO_55.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_files.txt --whichFile 37 --isotope CAMERA >> IPO_37.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_files.txt --whichFile 32 --isotope CAMERA >> IPO_32.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 4.6, 'peakMax': 68.0, 'ppm': 17.0, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.01, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.536, 'gapInit': 0.7, 'gapExtend': 2.448, 'bw': 0.879999999999999, 'binSizeDensity': 0.0074, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 4.8, 'peakMax': 80.0, 'ppm': 18.5, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.0045, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.4768, 'gapInit': 0.928, 'gapExtend': 2.64, 'bw': 0.879999999999999, 'binSizeDensity': 0.017, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 4.0, 'peakMax': 47.0, 'ppm': 18.5, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.0045, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.65, 'gapInit': 0.712, 'gapExtend': 2.4, 'bw': 0.879999999999999, 'binSizeDensity': 0.025, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 4.466666666666666, 'peakMax': 65.0, 'ppm': 18.0, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.006333333333333333, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.5542666666666666, 'gapInit': 0.7799999999999999, 'gapExtend': 2.496, 'bw': 0.879999999999999, 'binSizeDensity': 0.016466666666666668, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/ubuntu/data/downloading_data/MTBLS315/data/mzData/mzData_files.txt' --ppm 18.0 --mode 'positive' --peakMin 4.466666666666666 --peakMax 65.0 --mzdiff 0.006333333333333333 --binSizeObi 0.5542666666666666 --gapInit 0.7799999999999999 --gapExtend 2.496 --bw 0.879999999999999 --minFrac 0.05000000000000001 --binSizeDensity 0.016466666666666668 --alignedFile '/home/ubuntu/data/downloading_data/MTBLS315/data/mzData/IPO_aligned_MTBLS315_mzData.csv' >> '/home/ubuntu/data/downloading_data/MTBLS315/data/mzData/mzData_files_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_files.txt --whichFile 50 --isotope CAMERA > IPO_50.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_files.txt --whichFile 21 --isotope CAMERA > IPO_21.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_files.txt --whichFile 5 --isotope CAMERA > IPO_5.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun

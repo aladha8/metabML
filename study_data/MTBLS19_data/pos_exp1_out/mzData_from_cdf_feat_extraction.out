@@ -1,0 +1,76 @@
+[1] "parameters for centwave: "
+Object of class:  CentWaveParam 
+Parameters:
+ ppm: 42 
+ peakwidth: 5, 85 
+ snthresh: 10 
+ prefilter: 3, 1 
+ mzCenterFun: wMean 
+ integrate: 2 
+ mzdiff: 0.01275 
+ fitgauss: FALSE 
+ noise: 1 
+ verboseColumns: TRUE 
+ roiList length: 0 
+ firstBaselineCheck TRUE 
+ roiScales length: 0 
+[1] "parameters for obiwarp: "
+Object of class:  ObiwarpParam 
+Parameters:
+ binSize: 0.6113333 
+ centerSample:  
+ response: 1 
+ distFun: cor_opt 
+ gapInit: 0.448 
+ gapExtend: 2.472 
+ factorDiag: 2 
+ factorGap: 1 
+ localAlignment: FALSE 
+ initPenalty: 0 
+[1] "parameters for density:"
+Object of class:  PeakDensityParam 
+Parameters:
+ sampleGroups: numeric of length 90 
+ bw: 5.488 
+ minFraction: 0.05 
+ minSamples: 1 
+ binSize: 0.03566667 
+ maxFeatures: 50 
+[1] "fill chrom peak params: "
+Object of class:  FillChromPeaksParam 
+Parameters:
+ expandMz: 0 
+ expandRt: 0 
+ ppm: 0 
+[1] "starting conversion to xcmsSet"
+[1] "conversion complete"
+[1] "wrote to first csv"
+[1] "finished annotation"
+Start grouping after retention time.
+Created 262 pseudospectra.
+[1] "finished group FWHM"
+[1] "got length, starting isotope finding"
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+Found isotopes: 1733 
+[1] "found isotopes"
+Start grouping after correlation.
+Generating EIC's .. 
+Warning: Found NA peaks in selected sample.
+
+Calculating peak correlations in 262 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+
+Calculating isotope assignments in 262 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+Calculating graph cross linking in 262 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+New number of ps-groups:  4800 
+xsAnnotate has now 4800 groups, instead of 262 
+[1] "finished group corr!"
+Generating peak matrix for peak annotation!
+Found and use user-defined ruleset!
+Calculating possible adducts in 4800 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+[1] "found adducts"

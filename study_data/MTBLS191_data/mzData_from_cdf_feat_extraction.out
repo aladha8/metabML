@@ -1,0 +1,75 @@
+[1] "parameters for centwave: "
+Object of class:  CentWaveParam 
+Parameters:
+ ppm: 29.5 
+ peakwidth: 24, 50.5 
+ snthresh: 10 
+ prefilter: 3, 409 
+ mzCenterFun: wMean 
+ integrate: 2 
+ mzdiff: 0.008166667 
+ fitgauss: FALSE 
+ noise: 252 
+ verboseColumns: TRUE 
+ roiList length: 0 
+ firstBaselineCheck TRUE 
+ roiScales length: 0 
+[1] "parameters for obiwarp: "
+Object of class:  ObiwarpParam 
+Parameters:
+ binSize: 0.95 
+ centerSample:  
+ response: 1 
+ distFun: cor_opt 
+ gapInit: 0.07333333 
+ gapExtend: 2.6 
+ factorDiag: 2 
+ factorGap: 1 
+ localAlignment: FALSE 
+ initPenalty: 0 
+[1] "parameters for density:"
+Object of class:  PeakDensityParam 
+Parameters:
+ sampleGroups: numeric of length 54 
+ bw: 38 
+ minFraction: 0.05 
+ minSamples: 1 
+ binSize: 0.01833333 
+ maxFeatures: 50 
+[1] "fill chrom peak params: "
+Object of class:  FillChromPeaksParam 
+Parameters:
+ expandMz: 0 
+ expandRt: 0 
+ ppm: 0 
+[1] "starting conversion to xcmsSet"
+[1] "conversion complete"
+[1] "wrote to first csv"
+[1] "finished annotation"
+Start grouping after retention time.
+Created 3 pseudospectra.
+[1] "finished group FWHM"
+[1] "got length, starting isotope finding"
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 60  70  100  
+Found isotopes: 1 
+[1] "found isotopes"
+Start grouping after correlation.
+Generating EIC's .. 
+
+Calculating peak correlations in 3 Groups... 
+ % finished: 60  70  100  
+
+Calculating isotope assignments in 3 Groups... 
+ % finished: 60  70  100  
+Calculating graph cross linking in 3 Groups... 
+ % finished: 60  70  100  
+New number of ps-groups:  3 
+xsAnnotate has now 3 groups, instead of 3 
+[1] "finished group corr!"
+Generating peak matrix for peak annotation!
+Found and use user-defined ruleset!
+Calculating possible adducts in 3 Groups... 
+ % finished: 60  70  100  
+[1] "found adducts"

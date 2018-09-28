@@ -1,0 +1,1773 @@
+Loading required package: xcms
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: BiocParallel
+Loading required package: MSnbase
+Loading required package: mzR
+Loading required package: Rcpp
+Loading required package: ProtGenerics
+
+This is MSnbase version 2.6.2 
+  Visit https://lgatto.github.io/MSnbase/ to get started.
+
+
+Attaching package: ‘MSnbase’
+
+The following object is masked from ‘package:stats’:
+
+    smooth
+
+The following object is masked from ‘package:base’:
+
+    trimws
+
+
+This is xcms version 3.2.0 
+
+
+Attaching package: ‘xcms’
+
+The following object is masked from ‘package:stats’:
+
+    sigma
+
+Loading required package: rsm
+Loading required package: CAMERA
+
+
+
+starting new DoE with:
+min_peakwidth: c(12, 28)
+max_peakwidth: c(35, 65)
+ppm: c(17, 32)
+mzdiff: c(-0.001, 0.01)
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11712 found.
+2
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 8968 regions of interest ... OK: 2997 found.
+3
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11923 found.
+4
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 8968 regions of interest ... OK: 3344 found.
+5
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 37534 regions of interest ... OK: 11773 found.
+6
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10137 regions of interest ... OK: 3036 found.
+7
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 37534 regions of interest ... OK: 11945 found.
+8
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10137 regions of interest ... OK: 3386 found.
+9
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11378 found.
+10
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 8968 regions of interest ... OK: 2930 found.
+11
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11446 found.
+12
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 8968 regions of interest ... OK: 3252 found.
+13
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 37534 regions of interest ... OK: 11344 found.
+14
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10137 regions of interest ... OK: 2932 found.
+15
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 37534 regions of interest ... OK: 11414 found.
+16
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10137 regions of interest ... OK: 3266 found.
+17
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 4983 found.
+18
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 37260 regions of interest ... OK: 11440 found.
+19
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 9584 regions of interest ... OK: 3207 found.
+20
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 4805 found.
+21
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 5071 found.
+22
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 14638 regions of interest ... OK: 4927 found.
+23
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 16244 regions of interest ... OK: 4957 found.
+24
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 5100 found.
+25
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 4950 found.
+26
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 4983 found.
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11538 found.
+
+
+
+starting new DoE with:
+min_peakwidth: c(4, 20)
+max_peakwidth: c(50, 80)
+ppm: c(9.5, 24.5)
+mzdiff: c(0.00065, 0.01165)
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 45322 regions of interest ... OK: 11806 found.
+2
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 13925 regions of interest ... OK: 4878 found.
+3
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 45322 regions of interest ... OK: 11469 found.
+4
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 13925 regions of interest ... OK: 5094 found.
+5
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 49372 regions of interest ... OK: 12398 found.
+6
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 4997 found.
+7
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 49372 regions of interest ... OK: 12068 found.
+8
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 5204 found.
+9
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 45322 regions of interest ... OK: 11608 found.
+10
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 13925 regions of interest ... OK: 4783 found.
+11
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 45322 regions of interest ... OK: 11262 found.
+12
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 13925 regions of interest ... OK: 4994 found.
+13
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 49372 regions of interest ... OK: 12236 found.
+14
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 4937 found.
+15
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 49372 regions of interest ... OK: 11903 found.
+16
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 15550 regions of interest ... OK: 5134 found.
+17
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11538 found.
+18
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 47973 regions of interest ... OK: 11950 found.
+19
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 14638 regions of interest ... OK: 5008 found.
+20
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11414 found.
+21
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11622 found.
+22
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 33694 regions of interest ... OK: 11355 found.
+23
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 37260 regions of interest ... OK: 11545 found.
+24
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11609 found.
+25
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11400 found.
+26
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 35667 regions of interest ... OK: 11538 found.
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 26547 regions of interest ... OK: 9360 found.
+no increase, stopping
+best parameter settings:
+min_peakwidth: 12.8
+max_peakwidth: 80
+ppm: 9.5
+mzdiff: 0.00395
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+Warning message:
+In optimizeXcmsSet(files = mz[args$whichFile], params = peakpickingParameters,  :
+  IPO (nSlaves-argument) and xcms (BPPARAM-argument) parallelisation cannot be used together! Setting nSlaves to 1
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 25670 regions of interest ... OK: 8080 found.
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 24940 regions of interest ... OK: 8074 found.
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 25460 regions of interest ... OK: 7880 found.
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 25663 regions of interest ... OK: 7862 found.
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 30207 regions of interest ... OK: 10585 found.
+
+
+
+starting new DoE with:
+
+distFunc: cor_opt
+gapInit: c(0, 0.4)
+gapExtend: c(2.1, 2.7)
+profStep: c(0.7, 1)
+plottype: none
+response: 1
+factorDiag: 2
+factorGap: 1
+localAlignment: 0
+retcorMethod: obiwarp
+bw: c(22, 38)
+minfrac: 0.05
+mzwid: c(0.015, 0.035)
+minsamp: 1
+max: 50
+center: 4
+
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.7 ... OK
+Create profile matrix with method 'bin' and step 0.7 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 51359 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.85 ... OK
+Create profile matrix with method 'bin' and step 0.85 ... OK
+
+Processing 71902 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+profStep or minfrac greater 1, decreasing to 0.71 and 1
+
+
+
+starting new DoE with:
+
+gapInit: c(0.18, 0.58)
+gapExtend: c(2.16, 2.64)
+profStep: c(0.71, 1)
+bw: c(12.4, 31.6)
+mzwid: c(0.003, 0.027)
+distFunc: cor_opt
+plottype: none
+response: 1
+factorDiag: 2
+factorGap: 1
+localAlignment: 0
+retcorMethod: obiwarp
+minfrac: 0.05
+minsamp: 1
+max: 50
+center: 4
+
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 1 ... OK
+Create profile matrix with method 'bin' and step 1 ... OK
+1030_N  Create profile matrix with method 'bin' and step 1 ... OK
+1037_N  Create profile matrix with method 'bin' and step 1 ... OK
+1007_N  Create profile matrix with method 'bin' and step 1 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 599173 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 66576 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.855 ... OK
+Create profile matrix with method 'bin' and step 0.855 ... OK
+
+Processing 119836 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+
+
+
+starting new DoE with:
+
+gapInit: c(0.34, 0.82)
+gapExtend: c(1.872, 2.448)
+profStep: c(0.536, 0.884)
+bw: c(0.879999999999999, 23.92)
+mzwid: c(0.0042, 0.0234)
+distFunc: cor_opt
+plottype: none
+response: 1
+factorDiag: 2
+factorGap: 1
+localAlignment: 0
+retcorMethod: obiwarp
+minfrac: 0.05
+minsamp: 1
+max: 50
+center: 4
+
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.536 ... OK
+Create profile matrix with method 'bin' and step 0.536 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 427981 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 76818 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.71 ... OK
+Create profile matrix with method 'bin' and step 0.71 ... OK
+
+Processing 130256 mz slices ... OK
+center sample:  1012_N 
+Processing: 1027_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1030_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1037_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+1007_N  Create profile matrix with method 'bin' and step 0.884 ... OK
+Create profile matrix with method 'bin' and step 0.884 ... OK
+
+Processing 121784 mz slices ... OK
+no increase stopping
+library(xcms)
+library(Rmpi)
+
+xset <- xcmsSet( 
+  method = "centWave",
+  peakwidth       = c(12.8, 80),
+  ppm             = 9.5,
+  noise           = 500,
+  snthresh        = 10,
+  mzdiff          = 0.00395,
+  prefilter       = c(3, 500),
+  mzCenterFun     = "wMean",
+  integrate       = 2,
+  fitgauss        = FALSE,
+  verbose.columns = TRUE)
+xset <- retcor( 
+  xset,
+  method         = "obiwarp",
+  plottype       = "none",
+  distFunc       = "cor_opt",
+  profStep       = 0.71,
+  center         = 4,
+  response       = 1,
+  gapInit        = 0.58,
+  gapExtend      = 2.16,
+  factorDiag     = 2,
+  factorGap      = 1,
+  localAlignment = 0)
+xset <- group( 
+  xset,
+  method  = "density",
+  bw      = 12.4,
+  mzwid   = 0.0138,
+  minfrac = 0.05,
+  minsamp = 1,
+  max     = 50)
+
+xset <- fillPeaks(xset)

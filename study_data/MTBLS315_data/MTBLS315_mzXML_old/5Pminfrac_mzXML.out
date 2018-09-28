@@ -1,0 +1,72 @@
+++++++ Data type does not need conversion ++++++
+++++++ No IPO out files given, Running IPO ++++++
+['nohup Rscript IPO_param_picking.R --fnames mzXML.txt --whichFile 31 >> IPO_31.out', 'nohup Rscript IPO_param_picking.R --fnames mzXML.txt --whichFile 20 >> IPO_20.out', 'nohup Rscript IPO_param_picking.R --fnames mzXML.txt --whichFile 45 >> IPO_45.out']
+[1] "parameters for centwave: "
+Object of class:  CentWaveParam 
+Parameters:
+ ppm: 35.75 
+ peakwidth: 17.472, 93 
+ snthresh: 10 
+ prefilter: 5, 1000 
+ mzCenterFun: wMean 
+ integrate: 2 
+ mzdiff: 0.001126667 
+ fitgauss: FALSE 
+ noise: 10000 
+ verboseColumns: TRUE 
+ roiList length: 0 
+ firstBaselineCheck TRUE 
+ roiScales length: 0 
+[1] "parameters for obiwarp: "
+Object of class:  ObiwarpParam 
+Parameters:
+ binSize: 0.825 
+ centerSample:  
+ response: 1 
+ distFun: cor_opt 
+ gapInit: 0.576 
+ gapExtend: 2.38 
+ factorDiag: 2 
+ factorGap: 1 
+ localAlignment: FALSE 
+ initPenalty: 0 
+[1] "parameters for density:"
+Object of class:  PeakDensityParam 
+Parameters:
+ sampleGroups: numeric of length 61 
+ bw: 12.4 
+ minFraction: 0.05 
+ minSamples: 1 
+ binSize: 0.0198 
+ maxFeatures: 50 
+[1] "fill chrom peak params: "
+Object of class:  FillChromPeaksParam 
+Parameters:
+ expandMz: 0 
+ expandRt: 0 
+ ppm: 0 
+Start grouping after retention time.
+Created 195 pseudospectra.
+Generating peak matrix!
+Run isotope peak annotation
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+Found isotopes: 2175 
+Start grouping after correlation.
+Generating EIC's .. 
+Warning: Found NA peaks in selected sample.
+
+Calculating peak correlations in 195 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+
+Calculating isotope assignments in 195 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+Calculating graph cross linking in 195 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+New number of ps-groups:  1426 
+xsAnnotate has now 1426 groups, instead of 195 
+Generating peak matrix for peak annotation!
+Found and use user-defined ruleset!
+Calculating possible adducts in 1426 Groups... 
+ % finished: 10  20  30  40  50  60  70  80  90  100  
+++++++ Getting xcms parameters ++++++
+++++++ Starting xcms run ++++++

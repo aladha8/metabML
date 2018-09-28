@@ -1,0 +1,37 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 6 >> IPO_6.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 3 >> IPO_3.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 1 >> IPO_1.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 15 > IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 8 > IPO_8.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 3 > IPO_3.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 14 > IPO_14.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 11 > IPO_11.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 8 > IPO_8.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 5 > IPO_5.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 15 > IPO_15.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 3 > IPO_3.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 35.2, 'peakMax': 83.0, 'ppm': 12.722, 'noise': 1069.25, 'snthresh': 10.0, 'mzdiff': 0.01132, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.24, 'gapExtend': 3.132, 'bw': 8.944, 'binSizeDensity': 0.0202, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 37.28, 'peakMax': 87.5, 'ppm': 13.25, 'noise': 1044.5, 'snthresh': 10.0, 'mzdiff': 0.0064448, 'filterMin': 3.0, 'filterMax': 166.37, 'integrate': 2.0, 'binSizeObi': 0.985, 'gapInit': 0.64, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 37.76, 'peakMax': 95.0, 'ppm': 12.8, 'noise': 1242.5, 'snthresh': 10.0, 'mzdiff': 0.0067308, 'filterMin': 3.0, 'filterMax': 166.964, 'integrate': 2.0, 'binSizeObi': 0.865, 'gapInit': 0.64, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0174, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 36.74666666666667, 'peakMax': 88.5, 'ppm': 12.924000000000001, 'noise': 1118.75, 'snthresh': 10.0, 'mzdiff': 0.0081652, 'filterMin': 3.0, 'filterMax': 111.44466666666666, 'integrate': 2.0, 'binSizeObi': 0.9499999999999998, 'gapInit': 0.5066666666666667, 'gapExtend': 2.8040000000000003, 'bw': 11.248, 'binSizeDensity': 0.017933333333333332, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/blood/neg/blood_neg.txt' --ppm 12.924000000000001 --mode 'negative' --peakMin 36.74666666666667 --peakMax 88.5 --mzdiff 0.0081652 --binSizeObi 0.9499999999999998 --gapInit 0.5066666666666667 --gapExtend 2.8040000000000003 --bw 11.248 --minFrac 0.05000000000000001 --binSizeDensity 0.017933333333333332 --alignedFile '/home/downloading_data/MTBLS264/raw/blood/neg/IPO_aligned_MTBLS264_blood_neg.csv' --noise 1118.75 --filterMin 3.0 --filterMax 111.44466666666666 > '/home/downloading_data/MTBLS264/raw/blood/neg/blood_neg_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 8 > IPO_8.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 14 > IPO_14.out', 'nohup Rscript IPO_param_picking.R --fnames blood_neg.txt --whichFile 15 > IPO_15.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 40.0, 'peakMax': 95.0, 'ppm': 14.75, 'noise': 698.0, 'snthresh': 10.0, 'mzdiff': 0.00659, 'filterMin': 3.0, 'filterMax': 277.25, 'integrate': 2.0, 'binSizeObi': 0.85, 'gapInit': 0.592, 'gapExtend': 2.4, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 30.4, 'peakMax': 78.5, 'ppm': 15.5, 'noise': 995.0, 'snthresh': 10.0, 'mzdiff': -0.00694, 'filterMin': 3.0, 'filterMax': 127.72, 'integrate': 2.0, 'binSizeObi': 0.994, 'gapInit': 0.928, 'gapExtend': 2.688, 'bw': 11.248, 'binSizeDensity': 0.0126, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 37.28, 'peakMax': 87.5, 'ppm': 13.25, 'noise': 1044.5, 'snthresh': 10.0, 'mzdiff': 0.0064448, 'filterMin': 3.0, 'filterMax': 166.37, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.36, 'gapExtend': 2.4, 'bw': 22.0, 'binSizeDensity': 0.015, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 35.89333333333334, 'peakMax': 87.0, 'ppm': 14.5, 'noise': 912.5, 'snthresh': 10.0, 'mzdiff': 0.0020316, 'filterMin': 3.0, 'filterMax': 190.4466666666667, 'integrate': 2.0, 'binSizeObi': 0.948, 'gapInit': 0.6266666666666666, 'gapExtend': 2.496, 'bw': 15.216, 'binSizeDensity': 0.0146, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS264/raw/blood/neg/blood_neg.txt' --ppm 14.5 --mode 'negative' --peakMin 35.89333333333334 --peakMax 87.0 --mzdiff 0.0020316 --binSizeObi 0.948 --gapInit 0.6266666666666666 --gapExtend 2.496 --bw 15.216 --minFrac 0.05000000000000001 --binSizeDensity 0.0146 --alignedFile '/home/downloading_data/MTBLS264/raw/blood/neg/IPO_aligned_MTBLS264_blood_neg.csv' --noise 912.5 --filterMin 3.0 --filterMax 190.4466666666667 > '/home/downloading_data/MTBLS264/raw/blood/neg/blood_neg_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

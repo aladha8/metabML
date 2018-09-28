@@ -1,0 +1,378 @@
+Loading required package: xcms
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: BiocParallel
+Loading required package: MSnbase
+Loading required package: mzR
+Loading required package: Rcpp
+Loading required package: ProtGenerics
+
+This is MSnbase version 2.6.3 
+  Visit https://lgatto.github.io/MSnbase/ to get started.
+
+
+Attaching package: ‘MSnbase’
+
+The following object is masked from ‘package:stats’:
+
+    smooth
+
+The following object is masked from ‘package:base’:
+
+    trimws
+
+
+This is xcms version 3.2.0 
+
+
+Attaching package: ‘xcms’
+
+The following object is masked from ‘package:stats’:
+
+    sigma
+
+Loading required package: rsm
+Loading required package: CAMERA
+
+
+
+starting new DoE with:
+min_peakwidth: c(12, 28)
+max_peakwidth: c(35, 65)
+ppm: c(17, 32)
+mzdiff: c(-0.001, 0.01)
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7877 found.
+2
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 9395 regions of interest ... OK: 1876 found.
+3
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 8102 found.
+4
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 9395 regions of interest ... OK: 1977 found.
+5
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 35199 regions of interest ... OK: 8652 found.
+6
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10414 regions of interest ... OK: 2058 found.
+7
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 35199 regions of interest ... OK: 9072 found.
+8
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10414 regions of interest ... OK: 2121 found.
+9
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7600 found.
+10
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 9395 regions of interest ... OK: 1810 found.
+11
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7707 found.
+12
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 9395 regions of interest ... OK: 1893 found.
+13
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 35199 regions of interest ... OK: 8271 found.
+14
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10414 regions of interest ... OK: 1957 found.
+15
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 35199 regions of interest ... OK: 8628 found.
+16
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10414 regions of interest ... OK: 2036 found.
+17
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3180 found.
+18
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 32676 regions of interest ... OK: 8206 found.
+19
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 9799 regions of interest ... OK: 1932 found.
+20
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3115 found.
+21
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3262 found.
+22
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 13813 regions of interest ... OK: 3016 found.
+23
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 15262 regions of interest ... OK: 3241 found.
+24
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3289 found.
+25
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3146 found.
+26
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3180 found.
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7721 found.
+
+
+
+starting new DoE with:
+min_peakwidth: c(4, 20)
+max_peakwidth: c(50, 80)
+ppm: c(9.5, 24.5)
+mzdiff: c(0.0034, 0.0144)
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 62777 regions of interest ... OK: 13467 found.
+2
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 12992 regions of interest ... OK: 2946 found.
+3
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 62777 regions of interest ... OK: 13465 found.
+4
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 12992 regions of interest ... OK: 3069 found.
+5
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 74518 regions of interest ... OK: 15679 found.
+6
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3185 found.
+7
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 74518 regions of interest ... OK: 16028 found.
+8
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3298 found.
+9
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 62777 regions of interest ... OK: 13181 found.
+10
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 12992 regions of interest ... OK: 2876 found.
+11
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 62777 regions of interest ... OK: 13161 found.
+12
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 12992 regions of interest ... OK: 2990 found.
+13
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 74518 regions of interest ... OK: 15337 found.
+14
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3116 found.
+15
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 74518 regions of interest ... OK: 15647 found.
+16
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 14391 regions of interest ... OK: 3228 found.
+17
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7721 found.
+18
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 68566 regions of interest ... OK: 14236 found.
+19
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 13813 regions of interest ... OK: 3071 found.
+20
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7642 found.
+21
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7749 found.
+22
+Detecting mass traces at 9.5 ppm ... OK
+Detecting chromatographic peaks in 29330 regions of interest ... OK: 7504 found.
+23
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 32676 regions of interest ... OK: 8301 found.
+24
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7809 found.
+25
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7613 found.
+26
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 30764 regions of interest ... OK: 7721 found.
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 46791 regions of interest ... OK: 11551 found.
+
+
+
+starting new DoE with:
+min_peakwidth: c(3, 19)
+max_peakwidth: c(65, 95)
+ppm: c(3.5, 18.5)
+mzdiff: c(-0.0021, 0.0089)
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 56085 regions of interest ... OK: 18895 found.
+2
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 14003 regions of interest ... OK: 2705 found.
+3
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 56085 regions of interest ... OK: 24086 found.
+4
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 14003 regions of interest ... OK: 3344 found.
+5
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 69928 regions of interest ... OK: 19634 found.
+6
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 15383 regions of interest ... OK: 3772 found.
+7
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 69928 regions of interest ... OK: 23870 found.
+8
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 15383 regions of interest ... OK: 4164 found.
+9
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 56085 regions of interest ... OK: 11086 found.
+10
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 14003 regions of interest ... OK: 2583 found.
+11
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 56085 regions of interest ... OK: 11038 found.
+12
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 14003 regions of interest ... OK: 2679 found.
+13
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 69928 regions of interest ... OK: 13220 found.
+14
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 15383 regions of interest ... OK: 3576 found.
+15
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 69928 regions of interest ... OK: 13349 found.
+16
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 15383 regions of interest ... OK: 3653 found.
+17
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 36638 regions of interest ... OK: 9378 found.
+18
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 63766 regions of interest ... OK: 11883 found.
+19
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 14733 regions of interest ... OK: 3536 found.
+20
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 36638 regions of interest ... OK: 9373 found.
+21
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 36638 regions of interest ... OK: 9394 found.
+22
+Detecting mass traces at 3.5 ppm ... OK
+Detecting chromatographic peaks in 32592 regions of interest ... OK: 7326 found.
+23
+Detecting mass traces at 18.5 ppm ... OK
+Detecting chromatographic peaks in 38743 regions of interest ... OK: 9792 found.
+24
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 36638 regions of interest ... OK: 11140 found.
+25
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 36638 regions of interest ... OK: 9268 found.
+26
+Detecting mass traces at 11 ppm ... OK
+Detecting chromatographic peaks in 36638 regions of interest ... OK: 9378 found.
+Detecting mass traces at 12.5 ppm ... OK
+Detecting chromatographic peaks in 47430 regions of interest ... OK: 14798 found.
+no increase, stopping
+best parameter settings:
+min_peakwidth: 10.2
+max_peakwidth: 95
+ppm: 12.5
+mzdiff: -0.0021
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+Warning message:
+In optimizeXcmsSet(files = mz[args$whichFile], params = peakpickingParameters,  :
+  IPO (nSlaves-argument) and xcms (BPPARAM-argument) parallelisation cannot be used together! Setting nSlaves to 1
+Error in socketConnection(host, port, TRUE, TRUE, "a+b", timeout = timeout) : 
+  internet routines cannot be loaded
+Calls: calculateXcmsSet ... .local -> .bpfork -> .bpforkConnect -> socketConnection
+Execution halted

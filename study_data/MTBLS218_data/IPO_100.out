@@ -1,0 +1,169 @@
+Loading required package: xcms
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: BiocParallel
+Loading required package: MSnbase
+Loading required package: mzR
+Loading required package: Rcpp
+Loading required package: ProtGenerics
+
+This is MSnbase version 2.6.3 
+  Visit https://lgatto.github.io/MSnbase/ to get started.
+
+
+Attaching package: ‘MSnbase’
+
+The following object is masked from ‘package:stats’:
+
+    smooth
+
+The following object is masked from ‘package:base’:
+
+    trimws
+
+
+This is xcms version 3.2.0 
+
+
+Attaching package: ‘xcms’
+
+The following object is masked from ‘package:stats’:
+
+    sigma
+
+Loading required package: rsm
+Loading required package: CAMERA
+
+
+
+starting new DoE with:
+min_peakwidth: c(12, 28)
+max_peakwidth: c(35, 65)
+ppm: c(17, 32)
+mzdiff: c(-0.001, 0.01)
+snthresh: 10
+noise: 500
+prefilter: 3
+value_of_prefilter: 500
+mzCenterFun: wMean
+integrate: 2
+fitgauss: FALSE
+verbose.columns: TRUE
+
+1
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7526 regions of interest ... OK: 61 found.
+2
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 2161 regions of interest ... OK: 46 found.
+3
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7526 regions of interest ... OK: 79 found.
+4
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 2161 regions of interest ... OK: 73 found.
+5
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10375 regions of interest ... OK: 92 found.
+6
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2914 regions of interest ... OK: 51 found.
+7
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10375 regions of interest ... OK: 105 found.
+8
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2914 regions of interest ... OK: 82 found.
+9
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7526 regions of interest ... OK: 57 found.
+10
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 2161 regions of interest ... OK: 46 found.
+11
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 7526 regions of interest ... OK: 74 found.
+12
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 2161 regions of interest ... OK: 73 found.
+13
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10375 regions of interest ... OK: 89 found.
+14
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2914 regions of interest ... OK: 51 found.
+15
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 10375 regions of interest ... OK: 101 found.
+16
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2914 regions of interest ... OK: 82 found.
+17
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 7055 regions of interest ... OK: 86 found.
+18
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 8948 regions of interest ... OK: 81 found.
+19
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 2544 regions of interest ... OK: 61 found.
+20
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 7055 regions of interest ... OK: 66 found.
+21
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 7055 regions of interest ... OK: 104 found.
+22
+Detecting mass traces at 17 ppm ... OK
+Detecting chromatographic peaks in 6076 regions of interest ... OK: 79 found.
+23
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 7983 regions of interest ... OK: 89 found.
+24
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 7055 regions of interest ... OK: 86 found.
+25
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 7055 regions of interest ... OK: 86 found.
+26
+Detecting mass traces at 24.5 ppm ... OK
+Detecting chromatographic peaks in 7055 regions of interest ... OK: 86 found.
+Detecting mass traces at 32 ppm ... OK
+Detecting chromatographic peaks in 2914 regions of interest ... OK: 82 found.
+Error in resultIncreased(history) : 
+  No isotopes have been detected, peak picking not optimizable by IPO!
+Calls: optimizeXcmsSet -> resultIncreased
+In addition: Warning message:
+In optimizeXcmsSet(files = mz[args$whichFile], params = peakpickingParameters,  :
+  IPO (nSlaves-argument) and xcms (BPPARAM-argument) parallelisation cannot be used together! Setting nSlaves to 1
+Execution halted

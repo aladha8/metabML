@@ -1,0 +1,33 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 13 --isotope CAMERA > IPO_13.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 3 --isotope CAMERA > IPO_3.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 49 --isotope CAMERA > IPO_49.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 53 --isotope CAMERA > IPO_53.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 23 --isotope CAMERA > IPO_23.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 45 --isotope CAMERA > IPO_45.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 9 --isotope CAMERA > IPO_9.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 57 --isotope CAMERA > IPO_57.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 72 --isotope CAMERA > IPO_72.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 80 --isotope CAMERA > IPO_80.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 1 --isotope CAMERA > IPO_1.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 71 --isotope CAMERA > IPO_71.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 4.0, 'peakMax': 80.0, 'ppm': 39.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.0155, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.757, 'gapInit': 0.56, 'gapExtend': 2.688, 'bw': 0.879999999999999, 'binSizeDensity': 0.0498, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 3.0, 'peakMax': 95.0, 'ppm': 47.0, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.01385, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.3, 'gapExtend': 2.1, 'bw': 22.0, 'binSizeDensity': 0.031, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 4.0, 'peakMax': 80.0, 'ppm': 39.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.0045, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.451002, 'gapInit': 1.3736, 'gapExtend': 2.16, 'bw': 2.362, 'binSizeDensity': 0.03688, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 3.6666666666666665, 'peakMax': 85.0, 'ppm': 42.0, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.011283333333333333, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.7360006666666666, 'gapInit': 0.7445333333333334, 'gapExtend': 2.3160000000000003, 'bw': 8.414, 'binSizeDensity': 0.03922666666666667, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS19/raw/neg/exp2/mzData_from_cdf.txt' --ppm 42.0 --mode 'negative' --peakMin 3.6666666666666665 --peakMax 85.0 --mzdiff 0.011283333333333333 --binSizeObi 0.7360006666666666 --gapInit 0.7445333333333334 --gapExtend 2.3160000000000003 --bw 8.414 --minFrac 0.05000000000000001 --binSizeDensity 0.03922666666666667 --alignedFile '/home/downloading_data/MTBLS19/raw/neg/exp2/IPO_aligned_MTBLS19_neg_exp2_noise.csv' --noise 1.0 --filterMin 3.0 --filterMax 1.0 > '/home/downloading_data/MTBLS19/raw/neg/exp2/mzData_from_cdf_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 57 --isotope CAMERA > IPO_57.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 25 --isotope CAMERA > IPO_25.out', 'nohup Rscript IPO_param_picking.R --fnames mzData_from_cdf.txt --whichFile 50 --isotope CAMERA > IPO_50.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 4.0, 'peakMax': 80.0, 'ppm': 39.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.0045, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.892, 'gapInit': 0.62, 'gapExtend': 2.4, 'bw': 0.879999999999999, 'binSizeDensity': 0.044, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 4.0, 'peakMax': 72.5, 'ppm': 39.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.00945, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.946, 'gapInit': 0.28, 'gapExtend': 2.592, 'bw': 0.879999999999999, 'binSizeDensity': 0.0506, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 4.0, 'peakMax': 80.0, 'ppm': 39.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.0155, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.65, 'gapInit': 0.1, 'gapExtend': 2.988, 'bw': 5.2, 'binSizeDensity': 0.0416, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 4.0, 'peakMax': 77.5, 'ppm': 39.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': 0.009816666666666666, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.8293333333333334, 'gapInit': 0.3333333333333333, 'gapExtend': 2.66, 'bw': 2.3199999999999994, 'binSizeDensity': 0.045399999999999996, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS19/raw/neg/exp2/mzData_from_cdf.txt' --ppm 39.5 --mode 'negative' --peakMin 4.0 --peakMax 77.5 --mzdiff 0.009816666666666666 --binSizeObi 0.8293333333333334 --gapInit 0.3333333333333333 --gapExtend 2.66 --bw 2.3199999999999994 --minFrac 0.05000000000000001 --binSizeDensity 0.045399999999999996 --alignedFile '/home/downloading_data/MTBLS19/raw/neg/exp2/IPO_aligned_MTBLS19_neg_exp2_noise.csv' --noise 1.0 --filterMin 3.0 --filterMax 1.0 > '/home/downloading_data/MTBLS19/raw/neg/exp2/mzData_from_cdf_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

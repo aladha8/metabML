@@ -1,0 +1,29 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 18 > IPO_18.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 42 > IPO_42.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 39 > IPO_39.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 33 > IPO_33.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 59 > IPO_59.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 14 > IPO_14.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 55 > IPO_55.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 44 > IPO_44.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 20 > IPO_20.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 29 > IPO_29.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 50 > IPO_50.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 38 > IPO_38.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 60 > IPO_60.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 8 > IPO_8.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 41 > IPO_41.out']
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 18 > IPO_18.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 22 > IPO_22.out', 'nohup Rscript IPO_param_picking.R --fnames p_mzML.txt --whichFile 45 > IPO_45.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 11.0, 'peakMax': 56.0, 'ppm': 13.25, 'noise': 397.0, 'snthresh': 10.0, 'mzdiff': 0.00505, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.352, 'gapExtend': 2.688, 'bw': 5.488, 'binSizeDensity': 0.01428, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 11.0, 'peakMax': 95.0, 'ppm': 11.75, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': -0.00265, 'filterMin': 3.0, 'filterMax': 397.0, 'integrate': 2.0, 'binSizeObi': 0.628, 'gapInit': 0.328, 'gapExtend': 2.7, 'bw': 12.4, 'binSizeDensity': 0.0174, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 10.2, 'peakMax': 87.5, 'ppm': 12.5, 'noise': 1.0, 'snthresh': 10.0, 'mzdiff': -0.0032, 'filterMin': 3.0, 'filterMax': 1.0, 'integrate': 2.0, 'binSizeObi': 0.76, 'gapInit': 0.64, 'gapExtend': 2.4, 'bw': 12.4, 'binSizeDensity': 0.0162, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 10.733333333333334, 'peakMax': 79.5, 'ppm': 12.5, 'noise': 133.0, 'snthresh': 10.0, 'mzdiff': -0.0002666666666666668, 'filterMin': 3.0, 'filterMax': 133.0, 'integrate': 2.0, 'binSizeObi': 0.7959999999999999, 'gapInit': 0.43999999999999995, 'gapExtend': 2.596, 'bw': 10.096000000000002, 'binSizeDensity': 0.01596, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/downloading_data/MTBLS315/data/p_mzML/p_mzML.txt' --ppm 12.5 --mode 'positive' --peakMin 10.733333333333334 --peakMax 79.5 --mzdiff -0.0002666666666666668 --binSizeObi 0.7959999999999999 --gapInit 0.43999999999999995 --gapExtend 2.596 --bw 10.096000000000002 --minFrac 0.05000000000000001 --binSizeDensity 0.01596 --alignedFile '/home/downloading_data/MTBLS315/data/p_mzML/IPO_aligned_MTBLS315_p_mzML.csv' --noise 133.0 --filterMin 3.0 --filterMax 133.0 > '/home/downloading_data/MTBLS315/data/p_mzML/p_mzML_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++

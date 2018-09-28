@@ -1,0 +1,17 @@
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames n_mzML.txt --whichFile 32 > IPO_32.out', 'nohup Rscript IPO_param_picking.R --fnames n_mzML.txt --whichFile 17 > IPO_17.out', 'nohup Rscript IPO_param_picking.R --fnames n_mzML.txt --whichFile 48 > IPO_48.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:No params created due to no IPO runs finishing, debug and rerun
+INFO:root:++++++ Data type does not need conversion ++++++
+INFO:root:++++++ No IPO out files given, Running IPO ++++++
+INFO:root:['nohup Rscript IPO_param_picking.R --fnames n_mzML.txt --whichFile 51 > IPO_51.out', 'nohup Rscript IPO_param_picking.R --fnames n_mzML.txt --whichFile 4 > IPO_4.out', 'nohup Rscript IPO_param_picking.R --fnames n_mzML.txt --whichFile 57 > IPO_57.out']
+INFO:root:++++++ Getting xcms parameters ++++++
+INFO:root:params: {'peakMin': 13.6, 'peakMax': 80.0, 'ppm': 9.5, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.00175, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 1.0, 'gapInit': 0.64, 'gapExtend': 2.34, 'bw': 12.4, 'binSizeDensity': 0.0126, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 12.8, 'peakMax': 80.0, 'ppm': 9.5, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.00395, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.71, 'gapInit': 0.58, 'gapExtend': 2.16, 'bw': 12.4, 'binSizeDensity': 0.0138, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:params: {'peakMin': 12.8, 'peakMax': 78.5, 'ppm': 9.5, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.00175, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.52, 'gapInit': 0.64, 'gapExtend': 2.64, 'bw': 12.4, 'binSizeDensity': 0.0126, 'minfrac': 0.05, 'minsamp': 1.0}
+INFO:root:++++++ XCMS params ++++++
+INFO:root:{'peakMin': 13.066666666666668, 'peakMax': 79.5, 'ppm': 9.5, 'noise': 500.0, 'snthresh': 10.0, 'mzdiff': 0.0024833333333333335, 'filterMin': 3.0, 'filterMax': 500.0, 'integrate': 2.0, 'binSizeObi': 0.7433333333333333, 'gapInit': 0.62, 'gapExtend': 2.3800000000000003, 'bw': 12.4, 'binSizeDensity': 0.013, 'minfrac': 0.05000000000000001, 'minsamp': 1.0, 'file_count': 1.0}
+INFO:root:++++++ Starting xcms run ++++++
+INFO:root:nohup Rscript ./extract_features_xcms3.R --fnames '/home/ubuntu/data/downloading_data/MTBLS315/data/n_mzML/n_mzML.txt' --ppm 9.5 --mode 'negative' --peakMin 13.066666666666668 --peakMax 79.5 --mzdiff 0.0024833333333333335 --binSizeObi 0.7433333333333333 --gapInit 0.62 --gapExtend 2.3800000000000003 --bw 12.4 --minFrac 0.05000000000000001 --binSizeDensity 0.013 --alignedFile '/home/ubuntu/data/downloading_data/MTBLS315/data/n_mzML/IPO_aligned_MTBLS315_n_mzML.csv' > '/home/ubuntu/data/downloading_data/MTBLS315/data/n_mzML/n_mzML_feat_extraction.out'
+INFO:root:++++++ Completed xcms run ++++++
